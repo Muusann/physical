@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
 
-def validate(count):
-  if count < 0 or count < 0:
-    return False
-  else:
-    return True
+#検定基準（24歳以下）
 
 #腕立ての関数
 def push(push_count):
