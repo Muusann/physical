@@ -29,4 +29,4 @@ def abdo(abdo_count):
     return  0
 
 #3000m走
-  
+  def run()
