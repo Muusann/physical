@@ -30,6 +30,7 @@ while a_count < 0:
   if a_count >= 0:
     continue
 
+#年齢基準のインスタンス生成
 physical_test1 = PhysTest()
 physical_test2 = PhysTest()
 
@@ -41,7 +42,7 @@ elif age >= 25 and age < 30:
   p_result = physical_test2.push2(p_count)
   a_result = physical_test2.abdo2(a_count)
 
-
+#検定結果代入
 result = p_result + a_result
 
 #検定結果表示
