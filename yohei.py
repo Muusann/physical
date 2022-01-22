@@ -1,10 +1,5 @@
 # -*- coding: utf-8 -*-
-import physical 
-import physical2
-import physical3
-
-
-
+from physical import PhysTest
 
 print("あなたの体力を測定します。")
 name = input("名前を入力してください")
@@ -20,12 +15,16 @@ if a_count < 0:
   print("正しい数値を入力してください")
   exit()
 
+physical_test1 = PhysTest()
+physical_test2 = PhysTest()
+
+
 if age <= 24:
-  p_result = physical.push(p_count)
-  a_result = physical.abdo(a_count)
+  p_result = physical_test1.push(p_count)
+  a_result = physical_test1.abdo(a_count)
 elif age >= 25 and age < 30:
-  p_result = physical2.push(p_count)
-  a_result = physical2.abdo(a_count)
+  p_result = physical_test2.push2(p_count)
+  a_result = physical_test2.abdo2(a_count)
 
 
 result = p_result + a_result
