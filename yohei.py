@@ -2,23 +2,38 @@
 from physical import PhysTest
 
 print("あなたの体力を測定します。")
-name = input("名前を入力してください")
-age = int(input("あなたの年齢を入力してください"))
 
+#基本情報の入力
+name = input("名前を入力してください")
+while name == "":
+  name = input("名前が未入力です。名前を入力してください。")
+  if name != "":
+    continue
+  
+age = input("あなたの年齢を入力してください")
+while age == "":
+  age = input("年齢が未入力です。年齢を入力してください。")
+  if age != "":
+    age = int(age)
+    continue
+
+#記録の入力
 p_count = int(input("腕立て伏せの記録を入力してください。"))
-if p_count < 0:
-  print("正しい数値を入力してください")
-  exit()
+while p_count < 0:
+  p_count = int(input("正しい数値を入力してください。"))
+  if p_count >= 0:
+    continue
 
 a_count = int(input("腹筋の記録を入力してください。"))
-if a_count < 0:
-  print("正しい数値を入力してください")
-  exit()
+while a_count < 0:
+  a_count = int(input("正しい数値を入力してください。"))
+  if a_count >= 0:
+    continue
 
 physical_test1 = PhysTest()
 physical_test2 = PhysTest()
 
-
+#年齢別による条件分岐
 if age <= 24:
   p_result = physical_test1.push(p_count)
   a_result = physical_test1.abdo(a_count)
