@@ -4,6 +4,8 @@ import physical2
 import physical3
 
 
+
+
 print("あなたの体力を測定します。")
 name = input("名前を入力してください")
 age = int(input("あなたの年齢を入力してください"))

@@ -10,7 +10,7 @@ def push(push_count):
     return  3
   elif push_count >= 71 and push_count <= 99:
     return  4
-  elif push_count >= 100:
+  elif push_count >= 89:
     return  5
   else:
     return  0
@@ -28,3 +28,5 @@ def abdo(abdo_count):
   else:
     return  0
 
+#3000m走
+  

@@ -1,5 +1,8 @@
 #検定基準（30歳以上40歳未満）
 
+
+
+
 #腕立ての関数
 def push(push_count):
   if push_count >= 24 and push_count <= 44:
@@ -12,8 +15,7 @@ def push(push_count):
     return  5
   else:
     return  0
-
-
+  
 
 #腹筋の関数
 def abdo(abdo_count):
