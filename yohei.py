@@ -16,6 +16,7 @@ while age == "":
   if age != "":
     age = int(age)
     continue
+age = int(age)
 
 #記録の入力
 p_count = int(input("腕立て伏せの記録を入力してください。"))
