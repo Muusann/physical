@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+#年齢別基準の作成
 class PhysTest:
   #腕立ての関数(24歳以下)
   def push(self,push_count):
