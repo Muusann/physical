@@ -4,26 +4,26 @@
 class PhysTest:
   #腕立ての関数(24歳以下)
   def push(self,push_count):
-    if push_count >= 30 and push_count <= 54:
+    if push_count >= 82 and push_count <= 55:
       return  2
-    elif push_count >= 55 and push_count <= 70:
+    elif push_count >= 56 and push_count <= 61:
       return  3
-    elif push_count >= 71 and push_count <= 99:
-      return  4
-    elif push_count >= 89:
-      return  5
+    elif push_count >= 72 and push_count <= 81:
+      return  
+    elif push_count >= 82:
+      return  
     else:
       return  0
 
   #腹筋の関数(24歳以下)
   def abdo(self,abdo_count):
-    if abdo_count >= 35 and abdo_count <= 50:
+    if abdo_count >= 58 and abdo_count <= 63:
       return  2
-    elif abdo_count >= 51 and abdo_count <= 70:
+    elif abdo_count >= 64 and abdo_count <= 71:
       return  3
-    elif abdo_count >= 71 and abdo_count <= 90:
+    elif abdo_count >= 72 and abdo_count <= 79:
       return  4
-    elif abdo_count >= 91:
+    elif abdo_count >= 80:
       return  5
     else:
       return  0
